@@ -1,0 +1,49 @@
+/* Lumen Keep page: a dark frame around the canvas, nothing more.
+   The game itself draws its own HUD, build bar and screens. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #070a1c;
+  color: #dfe8ff;
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+#game {
+  display: block;
+  width: min(960px, 96vw);
+  height: auto;
+  border: 2px solid #2c355e;
+  border-radius: 12px;
+  box-shadow: 0 0 48px rgba(80, 110, 255, 0.25);
+  background: #0b1030;
+  cursor: pointer;
+}
+
+.status {
+  margin: 0;
+  font-size: 15px;
+  color: #ffe9a0;
+}
+
+.help {
+  margin: 0;
+  max-width: 960px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #9fb0d8;
+}
+
+.help b { color: #ffd166; }
